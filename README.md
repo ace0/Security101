@@ -26,9 +26,10 @@ Whenever possible, public-key authentication is typically more secure than usern
 Never use unencrypted channels to administer remote servers: no telnet, unencrypted FTP. SSH is ubiquitious and easy to use.
 
 ---
+
 ## Cryptography
 
-### No homebrew cryptography in production systems
+#### No homebrew cryptography in production systems
 Hoembrew algorithms and implementations are fine for security researchers and hobbyists. It's how we learn! But production systems need tried-and-true algorithms and trusted implementations. Current implementations are often still flawed, unfortunately (see TLS Heartbleed), but homebrew is often even worse. Unless you understand why things like semantic security and constant-time algorihtms are important, you probably shouldn't be designing, implementing, and putting cryptography into production.
 
 #### Get random numbers from a secure source
@@ -39,3 +40,12 @@ AES is the current NIST-approved standard for symmetric cryptography. Authentica
 
 #### Use SHA2 and SHA3 for hashing
 SHA2 (also called SAH-256, SHA-512) and SHA3 are the current NIST-approved secure hash functions. Don't use broken or deprecated hash functions like MD5 or SHA1 for security-sensitive operations.
+
+-- 
+
+## Software Implementations
+
+# In C use strncpy/strncat for string manipulation
+Use these length-restricted functions instead of strcpy/strcat (note the additional 'n'). These days address space layout randomization (ASLR), StackGuard, and data executipn prevention (DEP) make buffer overflow vulnerabilities harder to exploit, but things still slip through like memory corruption and memory-overread vulnerabilities.
+
+
