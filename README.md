@@ -36,10 +36,10 @@ Hoembrew algorithms and implementations are fine for security researchers and ho
 If you need ranodm numbers for security, your operating system and crypto library (like OpenSSL) have secure random numbers. Your programming language probably even has a wrapper for reading the OS-provided random number generat (RNG). Don't try running the time-of-day and your favorite Spice Girl through MD5 to generate secure random numbers.
 
 #### Use AES and authenticated encryption for symmetric cryptography
-AES is the current NIST-approved standard for symmetric cryptography. Authenticated encryption with associated data (AEAD) modes like Gallois Counter Mode (GCM) provide encrytion and authentication in a single primitive. Ensuring both encryption and authentication is critical and getting it right can be tricky. (In some cases, Mac-then-encrypt can be insecure.) Using an AEAD mode simplifies things and improves the chances of getting it right.
+AES is the current, NIST-approved standard for symmetric cryptography. Authenticated encryption with associated data (AEAD) modes like Gallois Counter Mode (GCM) provide encrytion and authentication in a single primitive. Ensuring both encryption and authentication is critical for security and getting it right can be tricky. (In some cases, mac-then-encrypt can be insecure.) Using an AEAD mode simplifies things and improves the chances of getting it right.
 
 #### Use SHA2 and SHA3 for hashing
-SHA2 (also called SAH-256, SHA-512) and SHA3 are the current NIST-approved secure hash functions. Don't use broken or deprecated hash functions like MD5 or SHA1 for security-sensitive operations.
+SHA2 (also called SHA-256 or SHA-512) and SHA3 are the current NIST-approved secure hash functions. Don't use broken or deprecated hash functions like MD5 or SHA1 for security-sensitive operations.
 
 -- 
 
