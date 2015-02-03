@@ -45,7 +45,7 @@ SHA2 (also called SAH-256, SHA-512) and SHA3 are the current NIST-approved secur
 
 ## Software Implementations
 
-# In C use strncpy/strncat for string manipulation
+#### In C use strncpy/strncat for string manipulation
 Use these length-restricted functions instead of strcpy/strcat (note the additional 'n'). These days address space layout randomization (ASLR), StackGuard, and data executipn prevention (DEP) make buffer overflow vulnerabilities harder to exploit, but things still slip through like memory corruption and memory-overread vulnerabilities.
 
 
