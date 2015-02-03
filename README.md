@@ -18,7 +18,7 @@ No plaintext passwords, no simple hashing, not even simple hashing with salts.
 Sensitive information includes: usernames, passwords, PINs, and financial information (like bank account numbers, credit and debit card numbers). Even better, use TLS for everything: servers are fast, the overhead isn't too bad, and it's a much simpler policy.
 
 ### Sanitize inputs used for database queries
-Avoid SQL injections by assuming client-provided inputs (including hidden form elements or cookies) are malicious. All production-quality database interface 
+Avoid SQL injections by assuming client-provided inputs (including hidden form elements or cookies) are malicious. All production-quality database libraries have techniques to sanitize untrusted inputs and generate queries that resist SQL injection. Use these.
 
 ### Use SSH with public key authentication to administer remote servers
 Whenever possible, public-key authentication is typically more secure than username/password authentication and relatively easy to setup. Once configured on the remote server and the local workstation or laptop, logins to remote servers are even easier than using passwords. 
