@@ -1,11 +1,11 @@
 # Security 101
-A list of the basic computer security items that should be considered when putting a product or service into production or connecting a device to the internet.
+A list of the basic computer security items that should be considered when putting a product or service into production, writing production software, or connecting devices to the internet.
 
 #### About
 This list was inspired by the following blog post: http://newschoolsecurity.com/2015/01/security-101-show-your-list/
 
 #### Contribute
-Please send candidate updates to this list via email to ace@cs.wisc.edu or by submitting a pull request.
+Please send candidate updates to this list via email to ace@cs.wisc.edu or by submit a pull request.
 
 # The List
 
