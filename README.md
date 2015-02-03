@@ -9,7 +9,7 @@ Please send candidate updates to this list via email to ace@cs.wisc.edu or by su
 
 # The List
 
-## Web sites and web services on the internet
+## Production Services on the Internet
 
 ### Store and validate passwords using bcrypt, scrypt, or PBKDF2.
 No plaintext passwords, no simple hashing, not even simple hashing with salts.
