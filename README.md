@@ -11,6 +11,9 @@ Please send candidate updates to this list via email to ace@cs.wisc.edu or by su
 
 ## Production Services on the Internet
 
+#### Set basic limits on the number of incorrect logins permitted for any one account
+The importants of this rule varies with the consequence of an attacker gaining unauthorized access to an account. For even medium-consequence web sites or web services, though, simple online guessing attacks can be thwarted by setting reaonable limits on incorrect guesses. Even generous limits like 100 guesses per day can effectively halt online password guessing attacks.
+
 #### Store and validate passwords using bcrypt, scrypt, or PBKDF2.
 No plaintext passwords, no simple hashing, not even simple hashing with salts.
 
